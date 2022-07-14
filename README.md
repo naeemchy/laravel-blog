@@ -28,11 +28,18 @@ It is a blog website. Here user can register, login, read post or create a new p
     
 - Create an App key by running this command (if you didn't do it already):
     `php artisan key:generate`
-The project can now be browsed from here: http://localhost:8888/
+    
+- Then, run:
+    `php artisan serve`
+
+The project can now be browsed from here: http://127.0.0.1:8000/
 
 ## Database Migration and Seed:
 Run following command to prepare the Database:
-`php artisan migrate:fresh --seed`
+    `php artisan migrate:fresh --seed`
+
+or,
+    import `laravel-blog.sql` (which are provided in the root directory in this project source code) database in your local machine
 
 ## About Laravel
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
